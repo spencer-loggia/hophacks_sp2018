@@ -31,10 +31,15 @@ sudo emacs /httpd.conf
 uncomment following lines (or leave if already are)
 
 LoadModule authz_core_module libexec/apache2/mod_authz_core.so
+
 LoadModule authz_host_module libexec/apache2/mod_authz_host.so
+
 LoadModule userdir_module libexec/apache2/mod_userdir.so
+
 LoadModule include_module libexec/apache2/mod_include.so
+
 LoadModule rewrite_module libexec/apache2/mod_rewrite.so
+
 LoadModule php5_module libexec/apache2/libphp5.so
 
 save file
@@ -42,6 +47,7 @@ save file
 sudo emacs extra/httpd-userdir.conf
 
 uncomment line:
+
 Include /private/etc/apache2/extra/httpd-userdir.conf
 
 save file
