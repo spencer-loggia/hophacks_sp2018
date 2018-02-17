@@ -10,12 +10,18 @@
     <!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="navbar-custom.css">
+
   </head>
+  <script>
+
+  }
+  </script>
+
   <body>
 
 
     <!-- YOUR CONTENT STARTS HERE -->
-    
+
       <header class="navbar navbar-expand navbar-dark flex-column flex-md-row  bd-navbar">
         <!-- Brand -->
     <a class="navbar-brand" href="#">
@@ -49,8 +55,10 @@
       </div>
     </li>
   </ul>
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Link</a>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" id="logout_button"  href="logout.php">Logout</a>
+
 </header>
+
 
 
     <!-- YOUR CONTENT ENDS HERE -->

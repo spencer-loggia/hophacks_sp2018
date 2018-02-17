@@ -25,7 +25,7 @@ function validateToken(){
 
 		if($row['token'] == $_SESSION['token'] ) {
 			//login succsessful!!!!!!!!!!!! :) :)
-		return array('username'=>$un, 'role'=>1);
+		return array('username'=>$un, 'role'=>$row['role']);
 		}
 
 		else {
