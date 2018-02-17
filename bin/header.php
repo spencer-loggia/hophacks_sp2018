@@ -15,7 +15,7 @@
 
 
     <!-- YOUR CONTENT STARTS HERE -->
-
+    
       <header class="navbar navbar-expand navbar-dark flex-column flex-md-row  bd-navbar">
         <!-- Brand -->
     <a class="navbar-brand" href="#">
@@ -51,9 +51,6 @@
   </ul>
   <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Link</a>
 </header>
-      <div class="container-fluid">
-
-      </div>
 
 
     <!-- YOUR CONTENT ENDS HERE -->
