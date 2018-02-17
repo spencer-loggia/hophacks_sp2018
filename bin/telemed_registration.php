@@ -25,10 +25,33 @@
     </div>
 <form id="rent_form" name="rent" method="post"  enctype = "multipart/form-data">
  	<br/><br/>
-    <textarea maxlength="900"placeholder="description of symptoms (max 900 characters)"name="description" rows="10"cols="120"></textarea> <br/><br/>
 
+	<p> Please check off all problems you are experiencing.</p>
 
-   <label> Start date of Symptoms </label>
+	<input type="checkbox" name="symptom" value="abormal_bleeding" /> Abnormal Bleeding
+  <input type="checkbox" name="symptom" value="alcohol_abuse" /> Alcohol Abuse
+  <input type="checkbox" name="symptom" value="arthiritis" /> Arthiritis
+	<input type="checkbox" name="symptom" value="cancer" /> Cancer
+	<input type="checkbox" name="symptom" value="diabetes" /> Diabetes
+	<input type="checkbox" name="symptom" value="difficulty_breathing" /> Difficulty Breathing
+	<input type="checkbox" name="symptom" value="drug_abuse" /> Drug Abuse
+  <input type="checkbox" name="symptom" value="fainting_spells" /> Fainting Spells
+	<input type="checkbox" name="symptom" value="fever" /> Fever
+	<input type="checkbox" name="symptom" value="frequent_headaches" /> Frequent Headaches
+	<input type="checkbox" name="symptom" value="hiv_aids" /> HIV and/or AIDS
+	<input type="checkbox" name="symptom" value="heart_attack" /> Heart Attack
+	<input type="checkbox" name="symptom" value="high_blood_pressure" /> High Blood Pressure
+	<input type="checkbox" name="symptom" value="joint_pain" /> Joint Pain
+	<input type="checkbox" name="symptom" value="kidney_problems" /> Kidney Problems
+	<input type="checkbox" name="symptom" value="low_blood_pressure" /> Low Blood Pressure
+	<input type="checkbox" name="symptom" value="std" /> Sexually Transmitted Disease
+	<input type="checkbox" name="symptom" value="stroke" /> Stroke
+	<input type="checkbox" name="symptom" value="sinus_problems" /> Sinus Problems
+	<input type="checkbox" name="symptom" value="thyroid_problems" /> Thyroid Problems
+
+	 <p>  </p>
+
+	 <label> Start date of Symptoms </label>
    <br/>
      <select name="month">
    		 <option value="1">January</option>
@@ -48,15 +71,21 @@
 	 <input type="text" name="day" maxlength="2" placeholder="Enter two digit day"/>
 	 <input type="year" name="year" maxlength="4" placeholder="Enter four digit year"/> <br/>
 
+	 <p>  </p>
+
+		<textarea maxlength="900"placeholder="description of symptoms (max 900 characters)"name="description" rows="10"cols="120"></textarea> <br/><br/>
 
 
-         <br/><br/>
+			<br/><br/>
 
 
           <p> We recommend you add a photo to be displayed with your event (.jpg or .png only, limit 2.5 Mb):</p>
          <input type = "file" name = "image" />
 
          <br/> <br/>
+
+				 <textarea maxlength="900"placeholder="pre-existing conditions"name="description" rows="10"cols="120"></textarea> <br/><br/>
+
 
 
 
