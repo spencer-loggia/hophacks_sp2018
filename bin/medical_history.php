@@ -1,4 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<link rel="stylesheet" type="text/css" href="medical_history.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- All the files that are required -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -21,32 +33,53 @@
 </form>
 <div class="container_upcoming">
 	<div id="rent_info">
-    <p> Welcome to TeleMed! Please fill out this form about your symptoms.</p>
+    <p id="p01"> Welcome to TeleMed!</p>
     </div>
 <form id="rent_form" name="rent" method="post"  enctype = "multipart/form-data">
  	<br/><br/>
 
-	<p> Please check off all problems you are experiencing.</p>
+	<p id="p02"> Please check off all problems you are experiencing.</p>
 
 	<input type="checkbox" name="symptom" value="abormal_bleeding" /> Abnormal Bleeding
-  <input type="checkbox" name="symptom" value="alcohol_abuse" /> Alcohol Abuse
-  <input type="checkbox" name="symptom" value="arthiritis" /> Arthiritis
-	<input type="checkbox" name="symptom" value="cancer" /> Cancer
+	<p>  </p>
+	<input type="checkbox" name="symptom" value="alcohol_abuse" /> Alcohol Abuse
+  <p>  </p>
+	<input type="checkbox" name="symptom" value="arthiritis" /> Arthiritis
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="diabetes" /> Diabetes
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="difficulty_breathing" /> Difficulty Breathing
+	<p>  </p>
+	<input type="checkbox" name="symptom" value="cancer" /> Cancer
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="drug_abuse" /> Drug Abuse
-  <input type="checkbox" name="symptom" value="fainting_spells" /> Fainting Spells
+  <p>  </p>
+	<input type="checkbox" name="symptom" value="fainting_spells" /> Fainting Spells
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="fever" /> Fever
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="frequent_headaches" /> Frequent Headaches
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="hiv_aids" /> HIV and/or AIDS
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="heart_attack" /> Heart Attack
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="high_blood_pressure" /> High Blood Pressure
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="joint_pain" /> Joint Pain
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="kidney_problems" /> Kidney Problems
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="low_blood_pressure" /> Low Blood Pressure
+	<p>  </p>
+	<input type="checkbox" name="symptom" value="rash" /> Rash
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="std" /> Sexually Transmitted Disease
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="stroke" /> Stroke
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="sinus_problems" /> Sinus Problems
+	<p>  </p>
 	<input type="checkbox" name="symptom" value="thyroid_problems" /> Thyroid Problems
 
 	 <p>  </p>
@@ -79,7 +112,7 @@
 			<br/><br/>
 
 
-          <p> We recommend you add a photo to be displayed with your event (.jpg or .png only, limit 2.5 Mb):</p>
+          <p id = p02> If applicable, we recommend you add a photo to be displayed with your symptoms (.jpg or .png only, limit 2.5 Mb):</p>
          <input type = "file" name = "image" />
 
          <br/> <br/>
