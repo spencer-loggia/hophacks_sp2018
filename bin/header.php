@@ -1,3 +1,4 @@
+
 <!-- DOCTYPE -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +15,6 @@
 	
 	
     <!-- YOUR CONTENT STARTS HERE -->
-      =
       <header class="navbar navbar-expand navbar-dark flex-column flex-md-row  bd-navbar">
   <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
 </a>
@@ -45,9 +45,6 @@
   </ul>
   <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Link 1</a>
 </header>
-      <div class="container-fluid">
-        
-      </div>
 
     
     <!-- YOUR CONTENT ENDS HERE -->
