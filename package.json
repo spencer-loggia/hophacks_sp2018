@@ -1,0 +1,29 @@
+{
+  "name": "hophacks_sp2018",
+  "version": "1.0.0",
+  "description": "THESE ARE INSTRACTIONS FOR SEETING UP YOU LOCAL DEV ENVIROMENT!!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spencer-loggia/hophacks_sp2018.git"
+  },
+  "keywords": [
+    "hophack",
+    "medical",
+    "philanthropy",
+    "database-drivem"
+  ],
+  "author": "spencer R loggia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spencer-loggia/hophacks_sp2018/issues"
+  },
+  "homepage": "https://github.com/spencer-loggia/hophacks_sp2018#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
