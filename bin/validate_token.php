@@ -11,11 +11,12 @@ session_start();
 function validateToken(){
 	include ("db.php");
 
+
 	if(isset($_SESSION['username']) && isset($_SESSION['token'])) {
 
 		$un = $_SESSION['username'];
 
-		$result = $mysqli->query("SELECT * FROM logindata WHERE username ='$un'");
+		$result = $mysqli->query("SELECT * FROM users WHERE name ='$un'");
 
 		$row = $result->fetch_assoc();
 
