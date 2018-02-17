@@ -75,7 +75,7 @@ save, restart terminal windows
 
 RESET SQL Pass
 sudo /usr/local/mysql/support-files/mysql.server stop
-sudo mysql_safe --skip-grant-tables
+sudo mysqld_safe --skip-grant-tables
 
 New terminal window
 
