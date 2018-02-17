@@ -94,11 +94,11 @@ if($user_info['username'] == 'GUEST' || $user_info['role'] > 1) {
 						</div>
 
 						<div class="form-group login-group-checkbox">
-							<input type="radio" class="" name="reg_gender" id="male" placeholder="username">
-							<label for="male">male</label>
+							<input type="radio" class="" name="reg_gender" id="doctor" placeholder="username">
+							<label for="doctor">doctor</label>
 
-							<input type="radio" class="" name="reg_gender" id="female" placeholder="username">
-							<label for="female">female</label>
+							<input type="radio" class="" name="reg_gender" id="patient" placeholder="username">
+							<label for="patient">patient</label>
 						</div>
 
 						<div class="form-group login-group-checkbox">
@@ -207,6 +207,11 @@ if($user_info['username'] == 'GUEST' || $user_info['role'] > 1) {
 			echo "no errors\n";
 
 		 $un = $_POST['reg_username'];
+
+		 if(isset($_POST['doctor'])){$level=0;}
+		 else if(isset($_POST['patient'])){$level=1;}
+		 else {$level = 2;}
+
 
 		 $Results = $mysqli->query("SELECT name FROM users WHERE name = '$un'");
 		 $Results = $Results->fetch_assoc();
