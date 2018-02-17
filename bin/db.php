@@ -8,7 +8,15 @@
 <body>
 <?php
 
-$mysqli = new mysqli("localhost", "root", "", "hophacks");
+$mysqli = new mysqli("localhost", "root", "p1o8p1o8", "hophacks");
+/* if(isNull($mysqli)){
+  echo "FAILLLLLLLLLLLL";
+}*/
+if (!$mysqli) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+
 
 ?>
 

@@ -11,11 +11,12 @@ session_start();
 function validateToken(){
 	include ("db.php");
 
+
 	if(isset($_SESSION['username']) && isset($_SESSION['token'])) {
 
 		$un = $_SESSION['username'];
 
-		$result = $mysqli->query("SELECT * FROM logindata WHERE username ='$un'");
+		$result = $mysqli->query("SELECT * FROM users WHERE name ='$un'");
 
 		$row = $result->fetch_assoc();
 
@@ -24,7 +25,7 @@ function validateToken(){
 
 		if($row['token'] == $_SESSION['token'] ) {
 			//login succsessful!!!!!!!!!!!! :) :)
-		return array('username'=>$un, 'role'=>1);
+		return array('username'=>$un, 'role'=>$row['role']);
 		}
 
 		else {
