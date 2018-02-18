@@ -1,0 +1,20 @@
+html,
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+footer {
+  clear: both;
+  position: fixed;
+  background: #3bd92e;
+  height: 46px;
+  overflow: hidden;
+  display: block;
+  bottom: 0;
+  width: 100%; /* add this rule */
+}
