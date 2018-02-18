@@ -1,4 +1,3 @@
-
 <!-- DOCTYPE -->
 <!DOCTYPE html>
 <html lang="en">
@@ -10,47 +9,43 @@
     <!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="navbar-custom.css">
+
   </head>
+  <script>
+  }
+  </script>
   <body>
 
 
     <!-- YOUR CONTENT STARTS HERE -->
-    
+
       <header class="navbar navbar-expand navbar-dark flex-column flex-md-row  bd-navbar">
         <!-- Brand -->
     <a class="navbar-brand" href="#">
-      <img src="../media/logo_white.png" style="width:42px;height:42px;border:0;">
+      <img src="../media/banner.png" style="width:120px;height:35px;border:0;">
     </a>
 
   <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
 </a>
-
-  <div class="navbar-nav-scroll">
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item">
-        <a class="nav-link " href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Documentation</a>
-      </li>
-        </ul>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="patientprofile.php">My Profile
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+      </ul>
     </div>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" id="logout_button"  href="logout.php">Logout</a>
 
-  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-    <li class="nav-item dropdown">
-      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Menu
-      </a>
-      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
-          <font color="#ffffff">
-        <a class="dropdown-item active" href="#">My Profile</a>
-        <a class="dropdown-item" href="#">Cases</a>
-      </font>
-      </div>
-    </li>
-  </ul>
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="#">Link</a>
 </header>
+
 
 
     <!-- YOUR CONTENT ENDS HERE -->
