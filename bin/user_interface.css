@@ -1,0 +1,29 @@
+html,
+body {
+  background-color: #efefef;
+  padding: 10px;
+  font-family: 'Varela Round';
+}
+#p01 {
+    background-color: #47b5ec;
+    color: white;
+    font-family:'Varela Round';
+    font-size: 600%;
+}
+
+#p03 {
+  background-color: #efefef;
+  color: black;
+  font-size: 200%;
+  text-align: center;
+  border-radius: 35px;
+  font-family: 'Verdana';
+}
+
+#p04{
+  background-color: #efefef;
+  color: black;
+  font-size: 200%;
+  text-align: center;
+  border-radius: 15px;
+}
