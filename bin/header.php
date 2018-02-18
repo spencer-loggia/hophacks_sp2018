@@ -17,7 +17,7 @@
 
     <!-- YOUR CONTENT STARTS HERE -->
 
-      <header class="navbar navbar-expand navbar-dark flex-column flex-md-row  bd-navbar">
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row  bd-navbar">
         <!-- Brand -->
     <a class="navbar-brand" href="#">
       <img src="../media/banner.png" style="width:120px;height:35px;border:0;">
@@ -42,6 +42,21 @@
     </div>
   <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" id="logout_button"  href="logout.php">Logout</a>
 
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Menu
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+          <font color="#ffffff">
+        <a class="dropdown-item active" href="#">My Profile</a>
+        <a class="dropdown-item" href="#">Cases</a>
+      </font>
+      </div>
+    </li>
+  </ul>
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" id="logout_button"  href="logout.php">Logout</a>
 </header>
 
 

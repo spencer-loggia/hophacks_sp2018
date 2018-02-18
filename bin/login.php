@@ -17,6 +17,7 @@ ob_start();
 include ('db.php');
 include ('validate_token.php');
 
+
 session_start();
 
 
@@ -224,7 +225,6 @@ if($user_info['username'] == 'GUEST' || $user_info['role'] > 1) {
 
 					$email = $_POST['reg_email'];
 
-					$level =1;
 
 					//setcookie('username', $un, time()+60*60*24);
 					//setcookie('token', $token, time()+60*60);
@@ -254,11 +254,17 @@ else {
 		<form method= "POST">
 
 		<input type="submit" name="logout" value="Logout"/>
+
 	</form>
 
 		<?php
 		if (isset($_POST['logout'])){
 			session_destroy();
+		  ?>
+		    <script>
+		      window.location = "login.php";
+		    </script>
+		  <?php
 		}
 	}
  ?>
