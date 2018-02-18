@@ -237,7 +237,7 @@ if($user_info['username'] == 'GUEST' || $user_info['role'] > 1) {
 
 					$Results = $mysqli -> query("INSERT INTO users (name, email, password, token, role) VALUES ('$un', '$email', '$hash', '$token', '$level')");
 
-					header('Location: index.php');
+					header('Location: login.php');
 		  	exit;
 			 }
 
