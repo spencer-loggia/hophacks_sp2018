@@ -1,5 +1,10 @@
 <!-- DOCTYPE -->
-<!DOCTYPE html>
+<?php
+  session_start();
+ ob_start ();
+
+
+ ?>
 <html lang="en">
   <head>
     <title>Telemed</title>
@@ -9,7 +14,6 @@
     <!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="navbar-custom.css">
-
   </head>
 
   <body>
@@ -40,7 +44,7 @@
         </li>
       </ul>
     </div>
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" id="logout_button"  href="logout.php">Logout</a>
+
 
 
   <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -56,8 +60,25 @@
       </div>
     </li>
   </ul>
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" id="logout_button"  href="logout.php">Logout</a>
+  <form method="post" name="logout_form" >
+  <input type="submit" class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" name="logout_button" value="Switch User / Login" />
+</form>
 </header>
+
+  <?php
+    if (isset($_POST['logout_button'])){
+      ?>
+      <script>
+      alert("submitted");
+      </script>
+      <?php
+        $temp_un = $_SESSION['name'];
+        echo "here".$temp_un;
+        session_destroy();
+        $mysqli->query("UPDATE users SET token = '0' WHERE name = '$temp_un'");
+        header('Location: login.php');
+    }
+   ?>
 
 
 

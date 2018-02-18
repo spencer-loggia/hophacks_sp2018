@@ -1,4 +1,5 @@
 <?php
+session_start();
 ob_start();
 ?>
 <link rel="stylesheet" type="text/css" href="login.css">
@@ -16,9 +17,9 @@ ob_start();
 <?php
 include ('db.php');
 include ('validate_token.php');
+include ('header.php');
 
 
-session_start();
 
 
 $user_info = validateToken();
@@ -248,25 +249,13 @@ if($user_info['username'] == 'GUEST' || $user_info['role'] > 1) {
 
 
 else {
-
+	session_destroy();
 	?>
-	 <p> You Are Already Logged in! </p>
-		<form method= "POST">
-
-		<input type="submit" name="logout" value="Logout"/>
-
-	</form>
-
-		<?php
-		if (isset($_POST['logout'])){
-			session_destroy();
-		  ?>
 		    <script>
 		      window.location = "login.php";
 		    </script>
 		  <?php
 		}
-	}
  ?>
 <!-- end:Main Form -->
 
