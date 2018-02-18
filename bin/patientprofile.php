@@ -45,16 +45,35 @@ include('header.php');
       <div class="row">
 
         <div class="col-md-3">
-          <img class="img-fluid" src="../media/placeholder.png" style="width:200px;height:150px;border:0;" alt="">
+          <img class="img-fluid" src="../media/placeholdpatient.jpeg" style="width:200px;height:150px;border:0;" alt="">
         </div>
         <div class="col-md-4">
-          <h4 class="my-3"> Overview </h4>
-          <ul>
-            <li> Name: </li>
-            <li> Age: </li>
-            <li> Location: </li>
-          </ul>
+        <div class="card card-body">
+        <h4 class="card-title">Overview</h4>
+        <ul class="card-text">
+          <li> Name: <b> Ann Handley </b> </li>
+          <li> Age: <b> 12 </b> </li>
+          <li> Location: <b> World Lego Headquarters </b></li>
+        </ul>
         </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <p></p>
+        </div>
+        <div class="row">
+          <p></p>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+          <div class="card card-body">
+          <h4 class="card-title">About Me</h4>
+          <p class="card-text">
+            “Ann Handley is a veteran of creating and managing digital content to build lego creations for organizations and individuals. Ann is the author of the Wall Street Journal bestseller  Everybody Writes: Your Go-To Guide to Creating Ridiculously Good Lego (September 2014, Wiley) and co-author of the best-selling book on lego marketing, Lego Rules: How to Create Killer Blocks, Podcasts, Videos, Ebooks, Webinars (and More) That Engage Customers and Ignite Your Kids (2011, Wiley). She is the Chief Content Officer of MarketingProfs; a LinkedIn Influencer; a keynote speaker, dad, and writer.”
+          </p>
+          </div>
+            </div>
           </div>
 
           <!-- jQuery library -->
@@ -78,4 +97,12 @@ include('header.php');
             $('[data-toggle="popover"]').popover()
           })
           </script>
+
         </body>
+        <!-- Footer -->
+          <footer class="py-5 bg-secondary">
+            <div class="container">
+              <p class="m-0 text-center text-white"> <b>TeleMed 2018 </b></p>
+            </div>
+            <!-- /.container -->
+          </footer>
